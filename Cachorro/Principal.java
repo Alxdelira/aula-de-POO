@@ -1,8 +1,18 @@
 package Cachorro;
+
+import Classe.Endereco;
+import Classe.Pessoa;
+
 public class Principal {
     public static void main(String[] args) {
-        Cachorro c = new Cachorro();
+        Endereco e = new Endereco();
 
-        c.setNome("Ruffos");
+        Pessoa p = new Pessoa();
+
+        p.setEndereco(e);
+
+        e.setBairro("Jardins");
+
+        System.out.println(e.getBairro());
     }
 }
