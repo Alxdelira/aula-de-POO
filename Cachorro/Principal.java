@@ -13,6 +13,6 @@ public class Principal {
 
         e.setBairro("Jardins");
 
-        System.out.println(e.getBairro());
+        System.out.println(p.getEndereco().getBairro());
     }
 }
